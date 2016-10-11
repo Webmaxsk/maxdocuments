@@ -1,0 +1,6 @@
+---
+Name: maxdocuments-extensions
+---
+Page:
+  extensions:
+    - ObjectDocumentsExtension

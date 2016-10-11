@@ -1,0 +1,16 @@
+{
+	"name": "webmaxsk/maxdocuments",
+	"description": "Simple documents for any data object.",
+	"type": "silverstripe-module",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "documents"],
+	"authors": [
+		{
+			"name": "Rastislav Brandobur",
+			"email": "brandobur@webmax.sk"
+		}
+	],
+	"extra": {
+		"installer-name": "maxdocuments"
+	}
+}

@@ -1,0 +1,12 @@
+sk:
+  Object:
+    DOCUMENTSCONTENT: Obsah
+    DOCUMENTSSORTER: 'Zoradiť dokumenty podľa'
+    DOCUMENTSSORTERNOTICE: "Ak sa dokumenty zoraďujú podľa 'Title' alebo 'ID', tak korektné usporiadanie je viditeľné iba na FrontEnde."
+    DOCUMENTSTAB: Dokumenty
+    DOCUMENTSUPLOADHEADING: "<span style='color: green'>Dokumenty môžete preusporiadať ťahaním miniatúr. Pozn.: Stránku následne netreba ukladať.</span>"
+    DOCUMENTSUPLOADHEADINGWRONG: "<span style='color: red'>Zoradenie dokumentov ťahaním miniatúr (SortOrder) nie je povolené. Chýba modul SortableUploadField.</span>"
+    DOCUMENTSUPLOADLABEL: Dokumenty
+    DOCUMENTSUPLOADLIMIT: 'Max. počet dokumentov: %s'
+    DOCUMENTTAB: Dokument
+    DOCUMENTUPLOADLABEL: Dokument
