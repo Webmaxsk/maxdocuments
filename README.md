@@ -2,7 +2,9 @@
 Simple documents for any data object 
 
 ## Installation
+```bash
 composer require "webmaxsk/maxdocuments:*"
+```
 
 You can add docs to any Page via CMS. You can disable docs for any Page subclass by adding config to mysite/_config.php:
 ```php
