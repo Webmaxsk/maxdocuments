@@ -20,6 +20,8 @@ class ObjectDocumentsExtension extends DataExtension {
 	
 	public function updateCMSFields(FieldList $fields) {      
 		 // Use SortableUploadField instead of UploadField!
+		$documentsTab = $fields->findOrMakeTab('Root.Images');
+
 		$owner = $this->owner;
 
 		if ($owner::config()->allow_documents) {
@@ -36,15 +38,13 @@ class ObjectDocumentsExtension extends DataExtension {
 			$documentField->setFolderName('Uploads/'.$this->owner->ClassName.'/'.$this->owner->ID);
 
 			if ($limit==1) {
+				$documentsTab->setTitle(_t("Object.DOCUMENTTAB", "Document"));
 				$documentField->setTitle(_t("Object.DOCUMENTUPLOADLABEL", "Document"));
-
-				$fields->fieldByName('Root.Documents')->setTitle(_t("Object.DOCUMENTTAB", "Document"));
 			}
 			else {
+				$documentsTab->setTitle(_t("Object.DOCUMENTSTAB", "Documents"));
 				$documentField->setTitle(_t("Object.DOCUMENTSUPLOADLABEL", "Documents"));
 				$documentField->setDescription(sprintf(_t("Object.DOCUMENTSUPLOADLIMIT","Documents count limit: %s"), $limit));
-
-				$fields->fieldByName('Root.Documents')->setTitle(_t("Object.DOCUMENTSTAB", "Documents"));
 
 				if ($this->owner->DocumentsSorter == "SortOrder")  {
 					$message = (class_exists("SortableUploadField")) ? _t("Object.DOCUMENTSUPLOADHEADING", "<span style='color: green'>Sort documents by draging thumbnail</span>") : _t("Object.DOCUMENTSUPLOADHEADINGWRONG", "<span style='color: red'>Sorting documents by draging thumbnails (SortOrder) not allowed. Missing module SortabeUploadField.</span>"); 
@@ -60,6 +60,8 @@ class ObjectDocumentsExtension extends DataExtension {
 
 			$fields->addFieldToTab('Root.Documents', $documentField);
 		}
+		else
+			$fields->removeByName($documentsTab->Name);
 	}
 
 	public function SortedDocuments() {
