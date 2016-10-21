@@ -20,7 +20,7 @@ class ObjectDocumentsExtension extends DataExtension {
 	
 	public function updateCMSFields(FieldList $fields) {      
 		 // Use SortableUploadField instead of UploadField!
-		$documentsTab = $fields->findOrMakeTab('Root.Images');
+		$documentsTab = $fields->findOrMakeTab('Root.Documents');
 
 		$owner = $this->owner;
 
