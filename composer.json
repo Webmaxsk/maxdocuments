@@ -10,6 +10,9 @@
 			"email": "brandobur@webmax.sk"
 		}
 	],
+    "require": {
+		"silverstripe/framework": "^3"
+	},
 	"extra": {
 		"installer-name": "maxdocuments"
 	}
