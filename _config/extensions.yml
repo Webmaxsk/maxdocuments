@@ -3,4 +3,4 @@ Name: maxdocuments-extensions
 ---
 Page:
   extensions:
-    - ObjectDocumentsExtension
+    - Webmaxsk\Model\ObjectDocumentsExtension\ObjectDocumentsExtension
