@@ -1,11 +1,13 @@
 <?php
 
+namespace Webmaxsk\Model\ObjectDocumentsExtension;
+
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Assets\File;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
-use SilverStripe\Forms\literalField;
+use SilverStripe\Forms\LiteralField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
 class ObjectDocumentsExtension extends DataExtension {
