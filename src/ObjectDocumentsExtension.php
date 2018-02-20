@@ -1,6 +1,6 @@
 <?php
 
-use SilverStripe\Core\Extension;
+use SilverStripe\ORM\DataExtension;
 use SilverStripe\Assets\File;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
@@ -8,7 +8,7 @@ use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Forms\literalField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
-class ObjectDocumentsExtension extends Extension {
+class ObjectDocumentsExtension extends DataExtension {
 
 	private static $allow_documents = true;
 	
