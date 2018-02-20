@@ -8,8 +8,15 @@
 		{
 			"name": "Rastislav Brandobur",
 			"email": "brandobur@webmax.sk"
+		},
+		{
+			"name": "Pali Ondras",
+			"email": "ondras@webmax.sk"
 		}
 	],
+	"require": {
+		"silverstripe/framework": "^4"
+	},
 	"extra": {
 		"installer-name": "maxdocuments"
 	}
