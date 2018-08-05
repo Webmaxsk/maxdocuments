@@ -4,8 +4,7 @@ en:
     DOCUMENTSSORTER: 'Sort documents by:'
     DOCUMENTSSORTERNOTICE: "Correct document sorting is visible on frontend only (if Sort by = Title, ID)"
     DOCUMENTSTAB: Documents
-    DOCUMENTSUPLOADHEADING: "<span style='color: green'>Sort documents by draging thumbnail</span>"
-    DOCUMENTSUPLOADHEADINGWRONG: "<span style='color: red'>Sorting documents by draging thumbnails (SortOrder) not allowed. Missing module SortabeUploadField.</span>"
+    DOCUMENTSUPLOADHEADING: "<span style='color: green'>Sort documents by dragging thumbnail.</span>"
     DOCUMENTSUPLOADLABEL: Documents
     DOCUMENTSUPLOADLIMIT: 'Documents count limit: %s'
     DOCUMENTTAB: Document

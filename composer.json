@@ -1,7 +1,7 @@
 {
 	"name": "webmaxsk/maxdocuments",
 	"description": "Simple documents for any data object.",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"license": "BSD-3-Clause",
 	"keywords": ["silverstripe", "documents"],
 	"authors": [
@@ -15,9 +15,12 @@
 		}
 	],
 	"require": {
-		"silverstripe/framework": "^4"
+		"silverstripe/framework": "^4.0",
+        "bummzack/sortablefile": "^2.0"
 	},
-	"extra": {
-		"installer-name": "maxdocuments"
-	}
+	"autoload": {
+        "psr-4": {
+            "Webmaxsk\\MaxDocuments\\": "src/"
+        }
+    }
 }

@@ -1,6 +1,6 @@
 ---
-Name: maxdocuments-extensions
+Name: maxdocuments_extensions
 ---
 Page:
   extensions:
-    - Webmaxsk\Model\ObjectDocumentsExtension\ObjectDocumentsExtension
+    - Webmaxsk\MaxDocuments\ObjectDocumentsExtension
